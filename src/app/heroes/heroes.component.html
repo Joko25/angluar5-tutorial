@@ -1,0 +1,48 @@
+<!-- <h2>{{ hero.name | uppercase }} Details</h2>
+<div>
+	<span>id: </span>{{hero.id}}
+</div>
+<div>
+	<span>name: </span>{{hero.name}}
+</div> -->
+<!-- <div class="input-group form-group-no-border input-lg">
+    <span class="input-group-addon">
+        <i class="now-ui-icons users_circle-08"></i>
+    </span>
+    <input [(ngModel)]="hero.name" type="text" class="form-control" placeholder="Hero Name...">
+</div> -->
+<!-- <div class="container">
+            
+            </div> -->
+<div style="width: 100%;">
+<h2>My Heroes</h2>
+	<div style="width: 40%; float: left; margin-right: 20%;">
+		<div class="list-group" >
+			<a href="javascript:void(0)" class="list-group-item" [class.selected]="h === selectedHero" *ngFor="let h of hero" (click)="onSelect(h)"><span>{{h.id}}</span> {{h.name}}</a>
+		</div>
+	</div>
+	<div style="width: 40%; float: left;">
+		<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+	</div>
+	<div style="clear: both;">
+	</div>
+</div>
+<!-- 
+<h2>My Heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of hero"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+
+<!-- 
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
